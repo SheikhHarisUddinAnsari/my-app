@@ -21,7 +21,8 @@ const Cart_Button = (data:any) => {
        product_price: data.data.price,
        product_type: data.data.type,
        product_image: data.data.image.asset._ref,
-       customer_user_id:userId
+       customer_user_id:userId,
+       product_total_price:data.data.price*data.data.quantity,
       })
    
  })

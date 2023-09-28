@@ -25,6 +25,7 @@ const page = async ({ params, searchParams }: Props) => {
         <Wrapper>
           { (typeof myItem != 'undefined') &&(<Mycard item={myItem} />)}
           
+          
         </Wrapper>
         <div className="absolute -z-50 bg-zinc-400  -bottom-12  w-screen   -top-8  opacity-5   overflow-hidden right-0 "></div>
       </div>

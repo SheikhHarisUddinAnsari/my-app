@@ -10,6 +10,7 @@ import { SignInButton, UserButton } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  
   return (
     <>
   
@@ -18,7 +19,7 @@ export default function Home() {
     
 
     {/* Navbar Section */}
-    <section> <Navbar /></section>
+    <section> <Navbar  /></section>
     {/* Hero Section */}
     <Wrapper>
     <section><Hero /></section>

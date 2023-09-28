@@ -36,6 +36,7 @@ export async function POST(request: NextRequest) {
         Product_title: req.product_title,
         Product_image: req.product_image,
         Product_type: req.product_type,
+        Product_total_price:req.product_total_price
       })
       .returning();
     return NextResponse.json({ res });
@@ -65,7 +66,7 @@ export async function PUT(request: NextRequest) {
   try {
     const req = await request.json();
     const res = await db
-      .update(cart_Table).set({Product_quantity:req.product_quantity})
+      .update(cart_Table).set({Product_quantity:req.product_quantity,Product_total_price:req.Product_total_price})
       .where(
         and(eq(cart_Table.User_id, req.user_Id), eq(cart_Table.Id, req.Id))
       )

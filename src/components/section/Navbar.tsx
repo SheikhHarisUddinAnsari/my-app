@@ -20,14 +20,6 @@ import { SignInButton, useAuth, UserButton } from "@clerk/nextjs";
 const Navbar: FC = () => {
   const [open, setOpen] = useState(false);
   const { isLoaded, userId, sessionId, getToken, isSignedIn } = useAuth();
-  // useEffect(() => {
-
-  //   console.log('isLoaded',isLoaded)
-  //   console.log('isSignedIn',isSignedIn)
-  //   // return () => {
-
-  //   // }
-  // }, [200])
 
   return (
     <nav className="sticky top-0 pt-8 -mt-8 bg-white" >
